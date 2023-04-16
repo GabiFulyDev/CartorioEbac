@@ -133,6 +133,7 @@ int main() //função menu
 	   printf("\t1 - Registrar nomes\n"); //usuário pode escolher por cadastrar um nome ao banco de nomes
 	   printf("\t2 - Consultar nomes\n"); //usuário pode escolher ver os nomes cadastrados e ver os dados coletados sobre cada um deles
  	   printf("\t3 - Deletar Nomes\n\n"); //usuário pode escolher deletar algum nome da lista do banco de dados
+	   printf("\t4 - Sair do sistema\n"); // usuário receberá mensagem de obrigada por usar o sistema e sairá.
 	   printf("Qual opção você deseja: "); // Fim do menu
 	
 	    scanf("%d", &opcao); // Armazenando a escolha do usuário
@@ -155,6 +156,10 @@ int main() //função menu
 	       deletar();
 		   break;
 		   
+		   case 4:
+		   	printf("Obrigada por utilizar o sistema\n");
+		   	return 0; // comando responsável por quebrar sequencia e sair do sistema
+		   	break;
 		
 		   default:
 		   printf("\n Está opção não está disponível!\n");
